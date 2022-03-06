@@ -1,0 +1,41 @@
+class TransformerConfig:
+    def __init__(self,
+                 vocab_size: int = 50265,
+                 max_position_embeddings: int = 1024,
+                 num_encoder_layers: int = 12,
+                 encoder_ffn_dim: int = 4096,
+                 encoder_attention_heads: int = 16,
+                 num_decoder_layers: int = 12,
+                 decoder_ffn_dim: int = 4096,
+                 decoder_attention_heads: int = 16,
+                 encoder_layer_dropout: float = 0.0,
+                 decoder_layer_dropout: float = 0.0,
+                 activation_function: str = 'gelu',
+                 layer_norm_eps: float = 1e-5,
+                 model_dim: int = 1024,
+                 dropout: float = 0.1,
+                 attention_dropout: float = 0.0,
+                 activation_dropout: float = 0.0,
+                 pad_token_id: int = 1,
+                 device=None,
+                 dtype=None) -> None:
+
+        self.vocab_size = vocab_size
+        self.max_position_embeddings = max_position_embeddings
+        self.num_encoder_layers = num_encoder_layers
+        self.encoder_ffn_dim = encoder_ffn_dim
+        self.encoder_attention_heads = encoder_attention_heads
+        self.num_decoder_layers = num_decoder_layers
+        self.decoder_ffn_dim = decoder_ffn_dim
+        self.decoder_attention_heads = decoder_attention_heads
+        self.encoder_layer_dropout = encoder_layer_dropout
+        self.decoder_layer_dropout = decoder_layer_dropout
+        self.activation_function = activation_function
+        self.layer_norm_eps = layer_norm_eps
+        self.model_dim = model_dim
+        self.dropout = dropout
+        self.attention_dropout = attention_dropout
+        self.activation_dropout = activation_dropout
+        self.pad_token_id = pad_token_id
+        self.device = device
+        self.dtype = dtype
