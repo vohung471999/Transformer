@@ -1,10 +1,10 @@
-from attention import MultiHeadAttention
-from embedding import NormalPositionalEmbedding, PositionalEmbedding
+from .attention import MultiHeadAttention
+from .embedding import NormalPositionalEmbedding, PositionalEmbedding
+from .transformer_config import TransformerConfig
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import copy
-from transformer_config import TransformerConfig
 
 
 class EncoderLayer(nn.Module):

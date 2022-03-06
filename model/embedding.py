@@ -1,8 +1,8 @@
+from .transformer_config import TransformerConfig
 import torch
+from torch.autograd import Variable
 import torch.nn as nn
 import math
-from torch.autograd import Variable
-from transformer_config import TransformerConfig
 
 
 class WordEmbedding(nn.Module):

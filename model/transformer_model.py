@@ -1,9 +1,9 @@
-from encoder import Encoder
-from decoder import Decoder
-from embedding import WordEmbedding
+from .encoder import Encoder
+from .decoder import Decoder
+from .embedding import WordEmbedding
+from .transformer_config import TransformerConfig
 import torch
 import torch.nn as nn
-from transformer_config import TransformerConfig
 
 
 class Transformer(nn.Module):
